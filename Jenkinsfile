@@ -14,7 +14,9 @@ pipeline {
         steps { echo "Security Scans" }
         }
         stage('Publish Artifacts'){
-        steps { echo "Publish Artifacts" }
+        steps { echo "Publish Artifacts"
+         sh 'env'
+         }
         }
             }
            }
